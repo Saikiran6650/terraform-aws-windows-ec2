@@ -1,6 +1,7 @@
 variable "key_name" {
   description = "The name of an existing AWS EC2 Key Pair to allow RDP access"
   type        = string
+  default     = "new-key-pair"
 }
 
 variable "instance_type" {
