@@ -8,4 +8,5 @@ resource "aws_instance" "windows_server" {
   tags = {
     Name = "Windows-Server"
   }
+depends_on = [resource.aws_lb.app_lb]  
 }
